@@ -1,4 +1,4 @@
-import DashboardBox from "../dashboard/components/DashboardBox";
+import DashboardBox from "../components/dashboard/DashboardBox";
 
 const Expenses = () => {
   return <DashboardBox>Expenses</DashboardBox>;

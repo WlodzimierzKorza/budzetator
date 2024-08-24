@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
 import Title from "./Title";
-import DashboardBox from "./components/DashboardBox";
+import DashboardBox from "./DashboardBox";
 
 function preventDefault(event: React.MouseEvent) {
   event.preventDefault();

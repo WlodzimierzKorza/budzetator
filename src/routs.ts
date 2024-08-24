@@ -4,7 +4,7 @@ import Revenues from "./pages/Revenues";
 import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
-import SignIn from "./sign-in/SignIn";
+import SignIn from "./components/sign-in/SignIn";
 import SignUp from "./sign-up/SignUp";
 
 export const routs = [

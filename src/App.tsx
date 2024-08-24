@@ -1,8 +1,8 @@
-import Dashboard from "./dashboard/Dashboard";
+import Dashboard from "./components/dashboard/Dashboard";
 import { Route, Routes } from "react-router";
 import { routs } from "./routs";
 import { BrowserRouter } from "react-router-dom";
-import SignIn from "./sign-in/SignIn";
+import SignIn from "./components/sign-in/SignIn";
 const App = () => {
   const logged = false;
   console.log(logged);
