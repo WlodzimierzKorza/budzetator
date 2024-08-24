@@ -4,6 +4,8 @@ import Revenues from "./pages/Revenues";
 import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import ShowChartOutlinedIcon from "@mui/icons-material/ShowChartOutlined";
+import SignIn from "./sign-in/SignIn";
+import SignUp from "./sign-up/SignUp";
 
 export const routs = [
   {
@@ -11,17 +13,30 @@ export const routs = [
     name: "Podsumowanie",
     component: Home,
     icon: ShowChartOutlinedIcon,
+    menu: true,
   },
   {
     path: "/revenues",
     name: "Przychody",
     component: Revenues,
     icon: PaidOutlinedIcon,
+    menu: true,
   },
   {
     path: "/expenses",
     name: "Wydatki",
     component: Expenses,
     icon: AddShoppingCartOutlinedIcon,
+    menu: true,
+  },
+  {
+    path: "/",
+    component: SignIn,
+    menu: false,
+  },
+  {
+    path: "/sing-up",
+    component: SignUp,
+    menu: false,
   },
 ];

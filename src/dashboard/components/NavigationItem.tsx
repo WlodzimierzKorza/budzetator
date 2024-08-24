@@ -8,8 +8,8 @@ import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { useNavigate } from "react-router";
 
 interface NavigationItemProps {
-  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
-  text: string;
+  icon?: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
+  text?: string;
   path: string;
 }
 const NavigationItem: React.FC<NavigationItemProps> = ({
