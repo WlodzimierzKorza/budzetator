@@ -1,6 +1,6 @@
 import { Divider, List } from "@mui/material";
 import { routs } from "../../routs";
-import NavigationItem from "./components/NavigationItem";
+import NavigationItem from "./NavigationItem";
 const Navigation = () => {
   return (
     <List component="nav">
