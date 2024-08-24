@@ -1,0 +1,27 @@
+[debug] [2024-08-24T06:22:45.479Z] ----------------------------------------------------------------------
+[debug] [2024-08-24T06:22:45.481Z] Command:       /usr/local/bin/firebase /Users/wlodzimierzkorza/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2024-08-24T06:22:45.481Z] CLI Version:   13.15.4
+[debug] [2024-08-24T06:22:45.481Z] Platform:      darwin
+[debug] [2024-08-24T06:22:45.481Z] Node Version:  v18.5.0
+[debug] [2024-08-24T06:22:45.483Z] Time:          Sat Aug 24 2024 08:22:45 GMT+0200 (Central European Summer Time)
+[debug] [2024-08-24T06:22:45.483Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-24T06:22:45.494Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-24T06:22:45.495Z] > authorizing via signed-in user (wkorza@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Volumes/Magazyn/apps/budzetator
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2024-08-24T06:23:15.400Z] Error: read EIO
+    at TTY.onStreamRead (node:internal/stream_base_commons:217:20)
