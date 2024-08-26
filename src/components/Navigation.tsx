@@ -5,13 +5,12 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import { routs } from "../../routs";
+import { routs } from "../routs";
 import NavigationItem from "./NavigationItem";
 import LogoutIcon from "@mui/icons-material/Logout";
-import { useSessionState } from "../../state/useSessionState";
-import { useAuth } from "../../pages/state/useAuth";
+import { useAuth } from "../pages/state/useAuth";
 const Navigation = () => {
-  const { signOut } = useAuth();
+  const { signOutUser } = useAuth();
   return (
     <List component="nav">
       {routs.map((route) => {
@@ -24,7 +23,7 @@ const Navigation = () => {
         );
       })}
       <Divider sx={{ my: 1 }} />
-      <ListItemButton onClick={() => signOut()}>
+      <ListItemButton onClick={() => signOutUser()}>
         <ListItemIcon>
           <LogoutIcon />
         </ListItemIcon>
