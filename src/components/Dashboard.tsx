@@ -17,7 +17,6 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import Navigation from "./Navigation";
 import Copyright from "../utils/copyright";
 import { useSessionState } from "../state/useSessionState";
-import { useEffect } from "react";
 import { useNavigate } from "react-router";
 
 const drawerWidth: number = 240;
@@ -82,12 +81,9 @@ const Dashboard: React.FC<DashboardProps> = ({ children }) => {
   };
   const navigate = useNavigate();
   const { logged } = useSessionState();
-  useEffect(() => {
-    if (logged) {
-      return;
-    }
+  if (!logged) {
     navigate("/sign-in");
-  }, [logged]);
+  }
 
   return (
     <ThemeProvider theme={defaultTheme}>
