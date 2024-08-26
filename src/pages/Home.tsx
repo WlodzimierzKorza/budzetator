@@ -1,7 +1,15 @@
-import DashboardBox from "../components/dashboard/DashboardBox";
+import Dashboard from "../components/Dashboard";
+import DashboardBox from "../components/DashboardBox";
+import AuthTemplate from "./AuthTemplate";
 
 const Home = () => {
-  return <DashboardBox>home</DashboardBox>;
+  return (
+    <AuthTemplate>
+      <Dashboard>
+        <DashboardBox>home</DashboardBox>
+      </Dashboard>
+    </AuthTemplate>
+  );
 };
 
 export default Home;
