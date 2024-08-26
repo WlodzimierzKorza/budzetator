@@ -4,6 +4,8 @@ import {
   signInWithEmailAndPassword,
   signOut,
   createUserWithEmailAndPassword,
+  updateProfile,
+  User,
 } from "firebase/auth";
 import { SignInProps } from "../../types";
 import { useSessionState } from "../../state/useSessionState";
@@ -86,5 +88,21 @@ export const useAuth = () => {
     }
   };
 
-  return { signIn, signOutUser, registerUser };
+  const updateUserProfile = async (displayName: any) => {
+    console.log(displayName);
+    if (!displayName) {
+      return false;
+    }
+    try {
+      const user = await updateProfile(getAuth(app).currentUser as User, {
+        displayName,
+      });
+      console.log(user);
+      showSuccess(enqueueSnackbar, "Dane uytkownika zostały zaktualizowane");
+    } catch (error) {
+      showError(enqueueSnackbar, `${error}`);
+    }
+  };
+
+  return { signIn, signOutUser, registerUser, updateUserProfile };
 };
